@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+</head>
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <p class="title" style="color: white; text-align: center; background-color: black; font-size: 40;">
+                    WEATHER   STATUS
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+        <div class="row">
+
+        <div class="card border-info mb-3" style="max-width: 25rem; max-height: 15rem;">
+            <div class="card-header" style="font-size: 30px;">
+                {{ weather.city }}
+            </div>
+            <div class="card-body text-info">
+              <h3 class="card-title"></h3>
+              <p class="card-text">{{ weather.temperature }}° F</p>
+              <p style="font-size: 20px;"> Description - {{ weather.description }}</p>
+              <p style="font-size: 20px;"> Humidity - {{ weather.humidity }}</p>
+              <p style="font-size: 20px;"> Pressure - {{ weather.pressure }}</p>
+              <p style="font-size: 20px;"> Min temp - {{ weather.min_temp }}</p>
+              <p style="font-size: 20px;"> Max temp - {{ weather.max_temp }}</p>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+            <div class="card border-info mb-3" style="max-width: 25rem; max-height: 15rem;">
+                <div class="card-header" style="font-size: 30px;">
+                    {{ weather1.city }}
+                </div>
+                <div class="card-body text-info">
+                  <h3 class="card-title"></h3>
+                  <p class="card-text">{{ weather1.temperature }}° F</p>
+                  <p style="font-size: 20px;"> Description - {{ weather1.description }}</p>
+                  <p style="font-size: 20px;"> Humidity - {{ weather1.humidity }}</p>
+                  <p style="font-size: 20px;"> Pressure - {{ weather1.pressure }}</p>
+                  <p style="font-size: 20px;"> Min temp - {{ weather1.min_temp }}</p>
+                  <p style="font-size: 20px;"> Max temp - {{ weather1.max_temp }}</p>
+    
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+        
+
+
+
+        
+        
+    </section>
+    <footer class="footer">
+    </footer>
+
+</body>
+</html>
